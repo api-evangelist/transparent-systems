@@ -1,0 +1,18 @@
+generated: '2026-07-21'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+note: transparentsystems.com is a parked GoDaddy for-sale lander (307 to forsale.godaddy.com,
+  null MX, wildcard 200s) as of 2026-07-21 — this records the parking host's posture,
+  not live company infrastructure. The company appears defunct.
+hosts:
+- host: www.transparentsystems.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 13 20:20:37 2026 GMT
+  hsts: false
+domains:
+- domain: transparentsystems.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: false

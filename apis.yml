@@ -1,8 +1,24 @@
 aid: transparent-systems
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/transparent-systems.png
 name: Transparent Systems
-description: 'Transparent Systems is a company surfaced as a portfolio company of pantera-capital and
-  added to the API Evangelist network as a stub for enrichment. Sector: crypto. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Transparent Systems (Transparent Financial Systems) was a Seattle-based
+  fintech startup advancing financial infrastructure through on-demand, 24/7 cryptographic
+  settlement solutions built on cryptographically-secured distributed networks, backed
+  by Pantera Capital and Vulcan Capital and active in US regulatory engagement (OCC
+  comments, 2020). The company appears defunct: its website redirected away from 2021
+  onward and as of July 2026 transparentsystems.com is a parked GoDaddy domain listed
+  for sale, with no developer portal, documentation, or public API surface.'
 url: https://raw.githubusercontent.com/api-evangelist/transparent-systems/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,18 +26,42 @@ x-backed-by:
 - pantera-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-evidence:
+- transparentsystems.com 307-redirects to forsale.godaddy.com (GoDaddy parked, for
+  sale) as of 2026-07-21
+- null MX record (0 .) — the domain accepts no mail
+- product site xand.tools no longer resolves
+- no GitHub organization found (github.com/transparentsystems is 404; github.com/transparent-systems
+  is an unrelated New Zealand studio)
+- archived homepage (Wayback 2020-11-01) confirms the settlement-solutions business;
+  snapshots show 301 redirects from 2021 and parking pages from 2024
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Crypto
+- Fintech
+- Payments
+- Settlement
+- Blockchain
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
 common:
 - type: Website
   url: https://www.transparentsystems.com/
+- type: DomainSecurity
+  url: security/transparent-systems-domain-security.yml
+- type: LLMsTxt
+  url: llms/transparent-systems-llms.txt

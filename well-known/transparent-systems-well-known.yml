@@ -1,0 +1,33 @@
+generated: '2026-07-21'
+method: searched
+host: https://www.transparentsystems.com
+note: transparentsystems.com is a parked GoDaddy for-sale domain (root 307-redirects
+  to forsale.godaddy.com). The parking lander answers EVERY path with HTTP 200 and
+  the same JavaScript redirect page, so the 200s below are wildcard parking responses,
+  not real well-known documents — no raw files were saved. DNS shows a null MX
+  (`0 .`) and A records pointing at parking infrastructure.
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  wildcard_parking_response: true
+  file: null
+- path: /.well-known/openid-configuration
+  status: 200
+  wildcard_parking_response: true
+  file: null
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  wildcard_parking_response: true
+  file: null
+- path: /.well-known/api-catalog
+  status: 200
+  wildcard_parking_response: true
+  file: null
+- path: /.well-known/ai-plugin.json
+  status: 200
+  wildcard_parking_response: true
+  file: null
+- path: /llms.txt
+  status: 200
+  wildcard_parking_response: true
+  file: null
